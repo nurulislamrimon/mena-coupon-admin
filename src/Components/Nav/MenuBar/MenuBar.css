@@ -1,0 +1,51 @@
+.menu-bar {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.menu-bar .logo {
+  margin: 0 0 30px 0;
+  color: #5a67ba;
+}
+.menu-bar .logo h1 {
+  font-size: clamp(30px, 4vw, 48px);
+  font-weight: 900;
+}
+.menu-bar .logo span {
+  font-size: clamp(16px, 2vw, 18px);
+}
+.menu-bar .all-menu-container {
+  height: calc(100vh - 170px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu-bar .all-menu-container > a:last-child {
+  margin-bottom: clamp(10px, 3vh, 30px);
+}
+.menu-bar .main-menu-container {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(10px, 2vh, 20px);
+}
+.menu {
+  display: block;
+  padding-top: clamp(5px, 1vh, 14px);
+  padding-bottom: clamp(5px, 1vh, 14px);
+  padding-left: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  border-radius: 8px;
+  color: #a6abc8;
+}
+.menu:hover {
+  font-weight: 600;
+  background-color: #f1f2fc;
+  color: #5a67ba;
+}
+
+.menu.active {
+  background-color: #f1f2fc;
+  font-weight: 600;
+  color: #5a67ba;
+}
